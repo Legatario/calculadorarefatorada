@@ -1,0 +1,50 @@
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    background-color: #e6e6e6;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #d4d4d4;
+  }
+  
+  button:active {
+    background-color: #bfbfbf;
+  }
+  
+  .row:last-child button {
+    background-color: #ff5e5e;
+    color: #fff;
+  }
+  
+  .row:last-child button:hover {
+    background-color: #e64b4b;
+  }
+  
+  .row:last-child button:active {
+    background-color: #cc3c3c;
+  }
+
+  @media screen and (max-width: 220px) {
+    .keypad{
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
